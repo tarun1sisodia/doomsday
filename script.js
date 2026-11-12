@@ -1,5 +1,5 @@
 const PAYPAL_URL = 'https://www.paypal.com/ncp/payment/AVK97HXPV5E8Y';
-const RELEASE_DATE_ISO = '2026-12-18T00:00:00+05:30';
+const RELEASE_DATE_ISO = '2026-12-17T00:00:00+05:30';
 const RAISED_LINE = 'Goal: $1. Raised so far: $0 — be the first.';
 const SHOW_INTRO = true;
 
@@ -21,6 +21,7 @@ document.querySelectorAll('[data-date-format]').forEach((element) => {
   element.dateTime = RELEASE_DATE_ISO;
 });
 document.getElementById('goal-line').textContent = RAISED_LINE;
+document.getElementById('ticket-image').alt = `Illustrated cinema ticket with Doctor Doom art: DOOMSDAY, Tarun Sisodia, ${shortDate}, 7:00 PM, $1.00`;
 if (!window.paypal) document.querySelector('.paypal-area').hidden = true;
 
 // The numbers are derived from the same release date as the page copy.

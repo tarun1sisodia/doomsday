@@ -1,6 +1,6 @@
 # Doomsday $1
 
-A static fan campaign by Tarun Sisodia, India. The ask is exactly $1, one time. The release date is configured in `script.js` as an ISO timestamp for 2026-12-18 in India. The site has no build step or backend.
+A static fan campaign by Tarun Sisodia, India. The ask is exactly $1, one time. The release date is configured in `script.js` as an ISO timestamp for 2026-12-17 in India. The site has no build step or backend.
 
 ## Deployment
 
@@ -10,12 +10,10 @@ A static fan campaign by Tarun Sisodia, India. The ask is exactly $1, one time. 
 4. Run `./verify.sh doom.coccoder999.workers.dev` (replace the argument with the deployed hostname).
 5. When replacing an asset, use a new filename and update references so cached versions do not linger.
 
-The supplied verifier's date-related banned phrases predate the current release date. It checks source files only, not the date rendered by JavaScript; the date must also be checked in the browser.
+The verifier checks source files only, not dates rendered by JavaScript or printed inside media. Check the date in the browser too.
 
 ## Before launch
 
-- Replace `assets/ticket.webp` with a new, correctly dated illustration under a new filename. Its current printed date is outdated, so its page slot is a placeholder.
-- Provide a logo-free replacement for `assets/doom-tony-mix.jpg`; its slot is a placeholder because the supplied image contains a logo.
 - Confirm that the goal line in `script.js` is accurate and edit it as soon as the first payment arrives.
 - Confirm the release date and local ticket price with the cinema. The page does not claim a particular local price.
 - In PayPal, set the item's maximum quantity to one, check that shipping is disabled, and configure the return URL after deployment. Confirm the actual fee and payout with a test payment.
