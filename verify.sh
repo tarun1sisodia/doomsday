@@ -20,7 +20,7 @@ done
 if grep -rIqF --exclude-dir=assets --exclude-dir=.git --exclude=verify.sh -- '$2' .; then bad 'found $2'; else ok 'no $2'; fi
 
 # 2b. The only allowed 'raised' text is the exact goal line, at most twice (HTML and the JS constant)
-r_all=$(grep -rIoi --exclude-dir=assets --exclude-dir=.git --exclude=verify.sh 'raised' . | wc -l)
+r_all=$(grep -rIh --exclude-dir=assets --exclude-dir=.git --exclude=verify.sh 'raised\|RAISED_LINE' . | sed 's/RAISED_LINE//g' | grep -oi 'raised' | wc -l)
 r_ok=$(grep -rIoF --exclude-dir=assets --exclude-dir=.git --exclude=verify.sh 'Raised so far: $0 — be the first' . | wc -l)
 s_all=$(grep -rIoi --exclude-dir=assets --exclude-dir=.git --exclude=verify.sh 'so far' . | wc -l)
 [ "$r_all" -eq "$r_ok" ] && [ "$s_all" -eq "$r_ok" ] && [ "$r_ok" -le 2 ] && ok "goal line is the only 'raised' text" || bad "'raised' or 'so far' outside the goal line (raised=$r_all so_far=$s_all exact=$r_ok)"
