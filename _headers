@@ -1,0 +1,9 @@
+# When replacing an asset, give the new file a new name to avoid stale caches.
+/assets/*
+  Cache-Control: public, max-age=86400
+
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate
+
+/
+  Cache-Control: public, max-age=300, must-revalidate
