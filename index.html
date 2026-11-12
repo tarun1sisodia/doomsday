@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Send $1 for Doomsday — Tarun's one-dollar ticket</title>
+<meta name="description" content="I'm Tarun from India. A Doomsday ticket here costs less than $1, so I'm asking the internet for exactly $1 to watch it on 17 December 2026.">
+<meta property="og:title" content="Send $1 for Doomsday">
+<meta property="og:description" content="I'm Tarun from India. A Doomsday ticket here costs less than $1, so I'm asking the internet for exactly $1 to watch it on 17 December 2026.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://{{DOMAIN}}/assets/hero.jpg">
+<meta property="og:url" content="https://{{DOMAIN}}/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://{{DOMAIN}}/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff6b35'/%3E%3Ctext x='32' y='44' font-size='36' font-family='Arial, sans-serif' font-weight='bold' text-anchor='middle' fill='%23060807'%3E$%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="https://www.paypal.com/sdk/js?client-id=BAAnDNZLE2CZ0XUe8ttWL0ko264Hy5YCr8iEomvTkNxbg6FgLHKsLnf4AHqbhZzuCvBORab-Dx4bq16-1I&amp;components=hosted-buttons&amp;disable-funding=venmo&amp;currency=USD"></script>
+</head>
+<body>
+
+<!-- Section 1 — Hero -->
+<header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <video class="hero-video" id="bg-video" muted loop playsinline poster="assets/bg-image.jpg" aria-hidden="true" tabindex="-1"></video>
+  <canvas class="hero-shader" id="doom-shader" aria-hidden="true"></canvas>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <h1>Send $1 for Doomsday</h1>
+    <p class="subline">ONE TICKET. ONE DOLLAR. ZERO SUPERPOWERS REQUIRED.</p>
+    <p class="pitch">hi, i'm tarun from india. i want to watch doomsday and the ticket here costs less than $1. I know that sounds stupid. But if u sent I will able to watch Doomsday. <a href="https://www.paypal.com/ncp/payment/AVK97HXPV5E8Y" target="_blank" rel="noopener">here is the link</a>, if not no worries at all.</p>
+    <div class="pay-area">
+      <div id="paypal-container-AVK97HXPV5E8Y" class="paypal-hosted"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "AVK97HXPV5E8Y",
+        }).render("#paypal-container-AVK97HXPV5E8Y")
+      </script>
+      <a class="btn btn-primary" id="hero-send" href="https://www.paypal.com/ncp/payment/AVK97HXPV5E8Y" target="_blank" rel="noopener">Send $1</a>
+    </div>
+    <figure class="qr-block">
+      <img src="assets/qr-paypal.png" alt="QR code that opens the PayPal page to send $1" width="500" height="561" loading="eager" decoding="async">
+      <figcaption>SCAN TO SEND $1</figcaption>
+    </figure>
+    <button class="intro-open" id="intro-open" type="button">Play the intro</button>
+    <div class="intro-player" id="intro-player" hidden>
+      <video id="intro-video" poster="assets/marvel-intro-poster.jpg" preload="none" playsinline controls></video>
+      <button class="intro-skip" id="intro-skip" type="button">Skip</button>
+    </div>
+    <picture class="hero-img tilt">
+      <source srcset="assets/hero.webp" type="image/webp">
+      <img src="assets/hero.jpg" alt="Tarun holding up a ticket with a popcorn bucket in the other hand, a giant hooded Doctor Doom looming behind him over a ruined city in green fog" width="1200" height="1777" fetchpriority="high" decoding="async">
+    </picture>
+    <div class="countdown" id="countdown" role="timer" aria-label="Countdown to Doomsday in theatres">
+      <p class="countdown-label" data-release-date>in theatres 17 December 2026</p>
+      <p class="countdown-digits" id="countdown-digits"><span class="digit" id="cd-days">00</span><span class="digit-sep">:</span><span class="digit" id="cd-hours">00</span><span class="digit-sep">:</span><span class="digit" id="cd-mins">00</span><span class="digit-sep">:</span><span class="digit" id="cd-secs">00</span></p>
+      <p class="countdown-units"><span>days</span><span>hours</span><span>mins</span><span>secs</span></p>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>SEND $1 • DOOMSDAY • 17 DECEMBER 2026 • ONE TICKET •&nbsp;</span><span>SEND $1 • DOOMSDAY • 17 DECEMBER 2026 • ONE TICKET •&nbsp;</span></div></div>
+</header>
+
+<main>
+  <!-- Section 2 — The story -->
+  <section class="section story reveal" id="story">
+    <h2>Why $1?</h2>
+    <div class="story-block">
+      <h3>A movie that takes you to the theater just to watch RDJ</h3>
+      <p>My local ticket costs less than $1. I do not have a dollar to spare.</p>
+    </div>
+    <div class="story-block">
+      <h3>A lifetime movie you must watch</h3>
+      <p>I am a student in India.</p>
+    </div>
+    <div class="story-block">
+      <h3>I'm going to watch Dr. Doom, please give me $1 because in India, it's less than $1.</h3>
+      <p>This is the one film I do not want to miss.</p>
+      <p>If the dollar does not come, no hard feelings at all.</p>
+    </div>
+    <a class="btn btn-primary" href="https://www.paypal.com/ncp/payment/AVK97HXPV5E8Y" target="_blank" rel="noopener">Send $1</a>
+  </section>
+
+  <p class="divider reveal">RDJ came back. Not as the hero. As Doom.</p>
+
+  <!-- Section 3 — RDJ: Tony Stark to Doctor Doom -->
+  <section class="section rdj reveal" id="rdj">
+    <h2>He was Iron Man. Now he is Doom.</h2>
+    <div class="flip-wrap">
+      <button class="flip-card" id="flip-card" type="button" aria-pressed="false" aria-label="Flip between Tony Stark and Doctor Doom">
+        <span class="flip-face flip-front">
+          <picture>
+            <source srcset="assets/rdj-tony.webp" type="image/webp">
+            <img src="assets/rdj-tony.jpg" alt="Tony Stark standing in front of a white sports car" width="1000" height="1327" loading="lazy" decoding="async">
+          </picture>
+          <span class="flip-caption">Tony Stark</span>
+        </span>
+        <span class="flip-face flip-back">
+          <picture>
+            <source srcset="assets/rdj-doom.webp" type="image/webp">
+            <img src="assets/rdj-doom.jpg" alt="Doctor Doom in green hooded armor and a metal mask, green fog around him" width="1086" height="1416" loading="lazy" decoding="async">
+          </picture>
+          <span class="flip-caption">Doctor Doom</span>
+        </span>
+      </button>
+      <p class="credit">Image: <a href="https://www.instagram.com/p/DfKeNyXmymg/?img_index=2&amp;vrfl=MTd5c3lsOWk1a3FxMA==" target="_blank" rel="noopener">@kaisuraimu on Instagram</a></p>
+      <div class="flip-pick">
+        <button type="button" data-face="tony">Tony Stark</button>
+        <button type="button" data-face="doom">Doctor Doom</button>
+      </div>
+    </div>
+    <figure class="mix reveal">
+      <picture class="tilt">
+        <source srcset="assets/doom-tony-mix.webp" type="image/webp">
+        <img src="assets/doom-tony-mix.jpg" alt="Split poster with Tony Stark in a pinstripe suit in the centre, Doctor Doom on both sides, and the word Doom handwritten on top" width="1000" height="1250" loading="lazy" decoding="async">
+      </picture>
+      <figcaption class="credit">Image: <a href="https://www.instagram.com/p/DcEHOcVzOyE/?rpxt=dTY5bTdsa2IybWZt" target="_blank" rel="noopener">@abhiram_vishnu on Instagram</a></figcaption>
+    </figure>
+    <div class="stills">
+      <picture>
+        <source srcset="assets/home-fly.webp" type="image/webp">
+        <img src="assets/home-fly.jpg" alt="Iron Man flying up from a cliffside house at dusk" width="1000" height="1327" loading="lazy" decoding="async">
+      </picture>
+      <picture>
+        <source srcset="assets/after-fight.webp" type="image/webp">
+        <img src="assets/after-fight.jpg" alt="A man removing a helmet from damaged armor, city skyline at dusk" width="1000" height="1327" loading="lazy" decoding="async">
+      </picture>
+      <picture>
+        <source srcset="assets/walk.webp" type="image/webp">
+        <img src="assets/walk.jpg" alt="A man in a suit with a glowing chest light, an armored suit in a glass case behind him" width="1000" height="1327" loading="lazy" decoding="async">
+      </picture>
+      <picture>
+        <source srcset="assets/jet.webp" type="image/webp">
+        <img src="assets/jet.jpg" alt="Iron Man flying alongside three fighter jets at sunset" width="1000" height="1327" loading="lazy" decoding="async">
+      </picture>
+    </div>
+    <p class="casting">RDJ spent more than a decade as the face of the heroes.</p>
+    <p class="casting">Seeing him behind the villain's mask is reason enough to buy a ticket.</p>
+  </section>
+
+  <p class="divider reveal">One dollar between me and the biggest movie of my life.</p>
+
+  <!-- Section 4 — Road to Doomsday -->
+  <section class="section timeline reveal" id="road">
+    <h2>Road to Doomsday</h2>
+    <ol class="timeline-list">
+      <li><span class="year">2008</span><span class="film">Iron Man</span><span class="line">Where Tony Stark starts.</span></li>
+      <li><span class="year">2010</span><span class="film">Iron Man 2</span><span class="line">More suits, more problems.</span></li>
+      <li><span class="year">2012</span><span class="film">The Avengers</span><span class="line">The team assembles.</span></li>
+      <li><span class="year">2013</span><span class="film">Iron Man 3</span><span class="line">Tony on his own.</span></li>
+      <li><span class="year">2015</span><span class="film">Avengers: Age of Ultron</span><span class="line">Tony's plan to protect the world goes wrong.</span></li>
+      <li><span class="year">2016</span><span class="film">Captain America: Civil War</span><span class="line">The team splits.</span></li>
+      <li><span class="year">2018</span><span class="film">Avengers: Infinity War</span><span class="line">Half of everyone is gone.</span></li>
+      <li><span class="year">2019</span><span class="film">Avengers: Endgame</span><span class="line">The goodbye.</span></li>
+      <li class="doomsday-entry"><span class="year">2026</span><span class="film">Avengers: Doomsday</span><span class="line">RDJ returns as Doctor Doom.</span><span class="date-tag" data-release-date>17 December 2026</span></li>
+    </ol>
+    <a class="btn btn-primary" href="https://www.paypal.com/ncp/payment/AVK97HXPV5E8Y" target="_blank" rel="noopener">Send $1</a>
+  </section>
+
+  <!-- Section 5 — Best of the MCU -->
+  <section class="section reels reveal" id="best">
+    <h2>Best of the MCU</h2>
+    <div class="reel-row">
+      <figure class="reel">
+        <div class="reel-frame">
+          <video class="reel-video" data-src="assets/reel-1.mp4" poster="assets/reel-1-poster.jpg" preload="none" playsinline controls></video>
+          <button class="reel-play" type="button" aria-label="Play reel 1">▶</button>
+        </div>
+        <figcaption class="credit">Clip: <a href="https://www.instagram.com/reel/DdZLViNP1nm/?dlrf=MWJraTcxbHQ3aTd1YQ==" target="_blank" rel="noopener">@frameflowed on Instagram</a></figcaption>
+      </figure>
+      <figure class="reel">
+        <div class="reel-frame">
+          <video class="reel-video" data-src="assets/reel-2.mp4" poster="assets/reel-2-poster.jpg" preload="none" playsinline controls></video>
+          <button class="reel-play" type="button" aria-label="Play reel 2">▶</button>
+        </div>
+        <figcaption class="credit">Clip: <a href="https://www.instagram.com/reel/DHF5cgzs9md/?obrf=MTJ5ZW13ZzRhc2V1dQ==" target="_blank" rel="noopener">@4k_archives on Instagram</a></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <p class="divider reveal">In India, this ticket costs less than $1. That is the whole problem, and the whole ask.</p>
+
+  <!-- Section 6 — The ticket -->
+  <section class="section ticket reveal" id="ticket">
+    <h2>The ticket your $1 buys</h2>
+    <figure class="ticket-fig">
+      <picture class="tilt ticket-img">
+        <source srcset="assets/ticket.webp" type="image/webp">
+        <img src="assets/ticket.webp" alt="Illustrated cinema ticket with Doctor Doom art: DOOMSDAY, Tarun Sisodia, Dec 17, 2026, 7:00 PM, $1.00" width="1200" height="392" loading="lazy" decoding="async">
+      </picture>
+      <figcaption>Illustration, not a booked ticket.</figcaption>
+    </figure>
+    <dl class="ticket-details">
+      <div><dt>Movie:</dt><dd>DOOMSDAY</dd></div>
+      <div><dt>Name:</dt><dd>Tarun Sisodia</dd></div>
+      <div><dt>From:</dt><dd>India</dd></div>
+      <div><dt>Date:</dt><dd>Dec 17, 2026</dd></div>
+      <div><dt>Show:</dt><dd>7:00 PM, opening week</dd></div>
+      <div><dt>Price:</dt><dd>$1.00</dd></div>
+      <div><dt>Seat:</dt><dd>Any seat, I'm not picky</dd></div>
+      <div><dt>Popcorn:</dt><dd>If we get there</dd></div>
+    </dl>
+    <figure class="qr-block">
+      <img src="assets/qr-paypal.png" alt="QR code that opens the PayPal page to send $1" width="500" height="561" loading="lazy" decoding="async">
+      <figcaption>SCAN TO SEND $1</figcaption>
+    </figure>
+    <a class="btn btn-primary" href="https://www.paypal.com/ncp/payment/AVK97HXPV5E8Y" target="_blank" rel="noopener">Send $1</a>
+  </section>
+
+  <p class="divider reveal">I am not asking for a fortune. I am asking for one ticket.</p>
+
+  <!-- Section 7 — Where your $1 goes -->
+  <section class="section money reveal" id="money">
+    <h2>Where your $1 goes</h2>
+    <p class="local-price">My local ticket costs less than $1.</p>
+    <ul class="fee-lines">
+      <li>You send: $1.00</li>
+      <li>PayPal keeps: about $0.34</li>
+      <li>I get: about $0.66 — and the ticket here costs less than $1, so it still covers it.</li>
+    </ul>
+    <p class="goal-line" id="goal-line">Goal: $1. Raised so far: $0 — be the first.</p>
+    <div class="gets-cards">
+      <article>
+        <h3>The ticket</h3>
+        <p>One Doomsday ticket, opening week.</p>
+      </article>
+      <article>
+        <h3>Popcorn</h3>
+        <p>Only if the dollar goes further than the ticket. Not promised.</p>
+      </article>
+      <article>
+        <h3>Bring a friend</h3>
+        <p>If a second dollar ever shows up, a friend comes too. A hope, not a promise.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Section 8 — Share it -->
+  <section class="section share reveal" id="share">
+    <h2>Can't send $1? Send this page.</h2>
+    <div class="share-btns" aria-live="polite">
+      <button type="button" class="btn btn-ghost" data-share="x">Copy X post</button>
+      <button type="button" class="btn btn-ghost" data-share="whatsapp">Copy WhatsApp message</button>
+      <button type="button" class="btn btn-ghost" data-share="email">Copy email text</button>
+      <button type="button" class="btn btn-ghost" id="share-page" hidden>Share this page</button>
+    </div>
+    <a class="btn btn-primary" href="https://www.paypal.com/ncp/payment/AVK97HXPV5E8Y" target="_blank" rel="noopener">Send $1</a>
+  </section>
+</main>
+
+<!-- Section 9 — Footer -->
+<footer class="footer">
+  <p>A fan campaign by Tarun Sisodia, India. Not affiliated with Marvel or Disney.</p>
+  <p>One dollar. One ticket. Thank you.</p>
+  <p><a href="https://www.paypal.com/ncp/payment/AVK97HXPV5E8Y" target="_blank" rel="noopener">Send $1</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

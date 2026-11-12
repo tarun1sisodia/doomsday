@@ -1,0 +1,5 @@
+/assets/*
+  Cache-Control: public, max-age=86400
+/*
+  Cache-Control: public, max-age=300, must-revalidate
+# If a file is replaced later it must be renamed (for example hero-v2.webp).
