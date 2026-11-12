@@ -173,6 +173,12 @@
         </div>
         <figcaption class="credit">Clip: <a href="https://www.instagram.com/reel/DHF5cgzs9md/?obrf=MTJ5ZW13ZzRhc2V1dQ==" target="_blank" rel="noopener">@4k_archives on Instagram</a></figcaption>
       </figure>
+      <figure class="reel">
+        <div class="reel-frame">
+          <video class="reel-video" data-src="assets/reel-3.mp4" poster="assets/reel-3-poster.jpg" preload="none" playsinline controls></video>
+          <button class="reel-play" type="button" aria-label="Play reel 3">▶</button>
+        </div>
+      </figure>
     </div>
   </section>
 
@@ -208,49 +214,55 @@
   <p class="divider reveal">I am not asking for a fortune. I am asking for one ticket.</p>
 
   <!-- Section 7 — Where your $1 goes -->
-  <section class="section money reveal" id="money">
-    <h2>Where your $1 goes</h2>
-    <p class="local-price">My local ticket costs less than $1.</p>
-    <ul class="fee-lines">
-      <li>You send: $1.00</li>
-      <li>PayPal keeps: about $0.34</li>
-      <li>I get: about $0.66 — and the ticket here costs less than $1, so it still covers it.</li>
-    </ul>
-    <p class="goal-line" id="goal-line">Goal: $1. Raised so far: $0 — be the first.</p>
-    <div class="gets-cards">
-      <article>
-        <h3>The ticket</h3>
-        <p>One Doomsday ticket, opening week.</p>
-      </article>
-      <article>
-        <h3>Popcorn</h3>
-        <p>Only if the dollar goes further than the ticket. Not promised.</p>
-      </article>
-      <article>
-        <h3>Bring a friend</h3>
-        <p>If a second dollar ever shows up, a friend comes too. A hope, not a promise.</p>
-      </article>
+  <section class="section money-section" id="money">
+    <div class="wrap">
+      <div class="section-top reveal">
+        <p class="eyebrow"><span class="index">06 / THE BREAKDOWN</span></p>
+        <h2 id="money-heading">Where your <span>$1 goes</span></h2>
+      </div>
+      <div class="money-panel reveal">
+        <div class="money-amount"><span>You send:</span><strong>$1.00</strong></div>
+        <div class="money-info">
+          <p>For an international USD commercial payment, <a href="https://www.paypal.com/in/business/paypal-business-fees" target="_blank" rel="noopener">PayPal's published standard fee</a> is 4.4% plus $0.30: about $0.34 on $1. That leaves about $0.66 before currency conversion, taxes, and any account-specific terms.</p>
+          <p id="goal-line" class="goal-line"></p>
+        </div>
+      </div>
+      <div class="stat-grid reveal">
+        <article><span>01</span><h3>The ticket</h3><p>This is the one film I do not want to miss.</p></article>
+        <article><span>02</span><h3>Popcorn</h3><p>Only if the dollar goes further than the ticket. Not promised.</p></article>
+        <article><span>03</span><h3>One ticket</h3><p>Any seat, I'm not picky.</p></article>
+      </div>
     </div>
   </section>
 
   <!-- Section 8 — Share it -->
-  <section class="section share reveal" id="share">
-    <h2>Can't send $1? Send this page.</h2>
-    <div class="share-btns" aria-live="polite">
-      <button type="button" class="btn btn-ghost" data-share="x">Copy X post</button>
-      <button type="button" class="btn btn-ghost" data-share="whatsapp">Copy WhatsApp message</button>
-      <button type="button" class="btn btn-ghost" data-share="email">Copy email text</button>
-      <button type="button" class="btn btn-ghost" id="share-page" hidden>Share this page</button>
+  <section class="section share-section" id="share">
+    <div class="wrap share-box reveal">
+      <div>
+        <p class="eyebrow"><span class="index">07 / PASS IT ON</span></p>
+        <h2 id="share-heading">Can't send $1?<br><span>Send this page.</span></h2>
+        <p class="section-lead">One dollar. One ticket. Thank you.</p>
+      </div>
+      <div class="share-actions">
+        <button type="button" class="button button-secondary" data-share="x">Copy X post <span aria-hidden="true">↗</span></button>
+        <button type="button" class="button button-secondary" data-share="whatsapp">Copy WhatsApp message <span aria-hidden="true">↗</span></button>
+        <button type="button" class="button button-secondary" data-share="email">Copy email text <span aria-hidden="true">↗</span></button>
+        <button type="button" class="button button-secondary" id="share-page" hidden>Share this page <span aria-hidden="true">↗</span></button>
+        <a class="button button-primary" href="https://www.paypal.com/ncp/payment/AVK97HXPV5E8Y" target="_blank" rel="noopener">Send $1 <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
-    <a class="btn btn-primary" href="https://www.paypal.com/ncp/payment/AVK97HXPV5E8Y" target="_blank" rel="noopener">Send $1</a>
   </section>
 </main>
 
 <!-- Section 9 — Footer -->
-<footer class="footer">
-  <p>A fan campaign by Tarun Sisodia, India. Not affiliated with Marvel or Disney.</p>
-  <p>One dollar. One ticket. Thank you.</p>
-  <p><a href="https://www.paypal.com/ncp/payment/AVK97HXPV5E8Y" target="_blank" rel="noopener">Send $1</a></p>
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <p>A fan campaign by Tarun Sisodia, India. Not affiliated with Marvel or Disney.</p>
+      <p>One dollar. One ticket. Thank you.</p>
+    </div>
+    <a href="https://www.paypal.com/ncp/payment/AVK97HXPV5E8Y" target="_blank" rel="noopener">Send $1 ↗</a>
+  </div>
 </footer>
 
 <script src="script.js"></script>

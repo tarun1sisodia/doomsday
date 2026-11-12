@@ -222,10 +222,10 @@
   }
   document.querySelectorAll('[data-share]').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      var original = btn.textContent;
+      var original = btn.innerHTML;
       copyText(SHARE_TEXTS[btn.getAttribute('data-share')] || '').then(function () {
         btn.textContent = 'Copied';
-        setTimeout(function () { btn.textContent = original; }, 2000);
+        setTimeout(function () { btn.innerHTML = original; }, 2000);
       }).catch(function () {
         btn.textContent = 'Copy failed, select the text and copy by hand';
       });
